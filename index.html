@@ -1,143 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big Data para Estudiantes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .welcome-section {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .resources, .projects, .forum {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        .box {
-            width: 30%;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Data para Estudiantes</title>
+  <style>
+    /* Estilos básicos y diseño de la página */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #334155;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #475569;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Bienvenidos a Big Data para Estudiantes</h1>
+    <p>Explora recursos, herramientas y conceptos clave para dominar el mundo de Big Data.</p>
+  </header>
 
-    <header>
-        <h1>Bienvenidos al Portal de Estudiantes de Big Data</h1>
-        <p>Una plataforma para aprender, compartir y crecer juntos en el mundo de Big Data</p>
-    </header>
+  <!-- Barra de navegación -->
+  <nav>
+    <a href="#que-es">¿Qué es Big Data?</a>
+    <a href="#recursos">Recursos</a>
+    <a href="#herramientas">Herramientas</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <nav>
-        <a href="#welcome">Bienvenida</a>
-        <a href="#resources">Recursos</a>
-        <a href="#projects">Proyectos</a>
-        <a href="#forum">Foro</a>
-    </nav>
+  <!-- Sección: ¿Qué es Big Data? -->
+  <section id="que-es">
+    <h2>¿Qué es Big Data?</h2>
+    <p>
+      Big Data se refiere al análisis y procesamiento de grandes volúmenes de datos que no pueden ser manejados por métodos tradicionales. 
+      Es una disciplina clave en la tecnología moderna, utilizada en sectores como la salud, las finanzas, y las redes sociales.
+    </p>
+  </section>
 
-    <div class="container">
-        <section id="welcome" class="welcome-section">
-            <h2>Bienvenida</h2>
-            <p>Bienvenidos a la página web de Big Data. Este es un espacio dedicado a estudiantes que están aprendiendo sobre el análisis de grandes volúmenes de datos. Aquí encontrarás recursos, proyectos y un foro donde podrás discutir temas de actualidad relacionados con Big Data.</p>
-        </section>
-
-        <section id="resources" class="resources">
-            <div class="box">
-                <h3>Recursos en línea</h3>
-                <p>Encuentra tutoriales, videos, y artículos sobre las herramientas más importantes de Big Data como Hadoop, Spark, y herramientas de visualización.</p>
-                <a href="#">Ver Recursos</a>
-            </div>
-            <div class="box">
-                <h3>Libros Recomendados</h3>
-                <p>Descubre los mejores libros que te ayudarán a profundizar tu conocimiento sobre Big Data y sus aplicaciones en la industria.</p>
-                <a href="#">Ver Libros</a>
-            </div>
-            <div class="box">
-                <h3>Webinars y Conferencias</h3>
-                <p>Accede a webinars y conferencias grabadas donde expertos comparten sus experiencias y conocimientos sobre Big Data.</p>
-                <a href="#">Ver Webinars</a>
-            </div>
-        </section>
-
-        <section id="projects" class="projects">
-            <div class="box">
-                <h3>Proyectos en Curso</h3>
-                <p>Consulta los proyectos actuales que están siendo desarrollados por estudiantes de Big Data y cómo puedes involucrarte.</p>
-                <a href="#">Ver Proyectos</a>
-            </div>
-            <div class="box">
-                <h3>Proyectos Finales</h3>
-                <p>Explora proyectos finales de estudiantes previos para obtener ideas y referencia en tu propio trabajo.</p>
-                <a href="#">Ver Proyectos Finales</a>
-            </div>
-            <div class="box">
-                <h3>Contribuir</h3>
-                <p>Aprende cómo puedes contribuir a proyectos de Big Data en la comunidad, compartiendo tus habilidades y experiencias.</p>
-                <a href="#">Contribuir a Proyectos</a>
-            </div>
-        </section>
-
-        <section id="forum" class="forum">
-            <div class="box">
-                <h3>Foro de Discusión</h3>
-                <p>Únete a la comunidad y participa en discusiones sobre las últimas tendencias, desafíos y herramientas de Big Data.</p>
-                <a href="#">Ir al Foro</a>
-            </div>
-            <div class="box">
-                <h3>Preguntas Frecuentes</h3>
-                <p>Resuelve tus dudas más comunes sobre Big Data y las tecnologías asociadas con nuestras respuestas rápidas.</p>
-                <a href="#">Ver FAQs</a>
-            </div>
-        </section>
+  <!-- Sección: Recursos -->
+  <section id="recursos">
+    <h2>Recursos para Aprender Big Data</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Cursos en Línea</h3>
+        <p>Explora plataformas como Coursera, edX y Udemy para aprender sobre Big Data desde cero.</p>
+      </div>
+      <div class="card">
+        <h3>Libros Recomendados</h3>
+        <p>"Big Data: A Revolution" y "Data Science for Business" son excelentes puntos de partida.</p>
+      </div>
+      <div class="card">
+        <h3>Comunidades</h3>
+        <p>Únete a foros y grupos como Kaggle, Reddit o LinkedIn para conectar con otros estudiantes y profesionales.</p>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Portal de Estudiantes de Big Data | Todos los derechos reservados.</p>
-    </footer>
+  <!-- Sección: Herramientas -->
+  <section id="herramientas">
+    <h2>Herramientas de Big Data</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Hadoop</h3>
+        <p>Una de las plataformas más populares para el almacenamiento y procesamiento de datos a gran escala.</p>
+      </div>
+      <div class="card">
+        <h3>Python</h3>
+        <p>Lenguaje de programación esencial para analizar datos, con librerías como Pandas y NumPy.</p>
+      </div>
+      <div class="card">
+        <h3>Power BI</h3>
+        <p>Visualiza y analiza datos de forma intuitiva utilizando esta herramienta de Microsoft.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Sección: Contacto -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>
+      ¿Tienes alguna pregunta o sugerencia? Escríbenos a 
+      <a href="mailto:bigdata@estudiantes.com">bigdata@estudiantes.com</a>.
+    </p>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Big Data para Estudiantes. Diseñado para aprender y compartir conocimientos.</p>
+  </footer>
 </body>
 </html>
